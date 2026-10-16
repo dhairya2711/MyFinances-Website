@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and contact information for My Finances, including Google connection, backup, synchronization, document imports, AI models, export and deletion help.">
+  <meta name="theme-color" content="#0a2444">
+  <title>Support — My Finances</title>
+  <link rel="icon" type="image/png" href="assets/my-finances-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="My Finances home">
+        <img src="assets/my-finances-logo.png" alt="" width="42" height="42">
+        <span>My Finances</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Overview</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html" aria-current="page">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Help with My Finances</p>
+        <h1>Support</h1>
+        <p class="page-intro">Find answers for common privacy, synchronization, backup, import and assistant questions—or contact us directly.</p>
+        <div class="meta-row">
+          <span class="meta-tag">Android application</span>
+          <span class="meta-tag">Package: ca.pfh.app</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-tight">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>How can we help?</h2>
+          <p class="section-copy">Describe what you expected, what happened and the App version shown in Settings. Screenshots are useful when they do not expose private financial information.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Email support</h3>
+          <a class="contact-address" href="mailto:myfinancesapp.support@gmail.com?subject=My%20Finances%20Support">myfinancesapp.support@gmail.com</a>
+          <p>Do not email passwords, API keys, full account numbers, unredacted statements, receipt originals, Google authorization codes or financial backup packages.</p>
+          <a class="button button-primary" href="mailto:myfinancesapp.support@gmail.com?subject=My%20Finances%20Support">Open your email app</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" aria-labelledby="before-contacting">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Useful diagnostic details</p>
+          <h2 id="before-contacting">Before contacting support</h2>
+          <p class="section-copy">These details help diagnose a problem without exposing your financial records.</p>
+        </div>
+        <div class="support-grid">
+          <article class="support-card">
+            <span class="icon-box">A</span>
+            <h3>App and device</h3>
+            <p>Include the My Finances version, Android version, device model and whether the problem occurs after restarting the App.</p>
+          </article>
+          <article class="support-card">
+            <span class="icon-box green">B</span>
+            <h3>Feature and action</h3>
+            <p>Name the screen and exact action, such as Sheets Sync now, Drive backup, receipt review, report export or local-model download.</p>
+          </article>
+          <article class="support-card">
+            <span class="icon-box gold">C</span>
+            <h3>Safe error text</h3>
+            <p>Copy the displayed error after removing names, emails, amounts, account information, file identifiers and provider credentials.</p>
+          </article>
+          <article class="support-card">
+            <span class="icon-box">D</span>
+            <h3>Protect existing data</h3>
+            <p>Do not uninstall the App, clear storage or delete Drive files while troubleshooting unless you have verified backups and support specifically recommends it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Frequently asked questions</p>
+          <h2 id="faq-heading">Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Do I need a Google account to use My Finances?</summary>
+            <p>No. Accounts, transactions, plans, investments, document extraction and local reports work without a Google account. Connect Google only if you want Sheets synchronization, Drive backups or explicit Drive document storage.</p>
+          </details>
+          <details>
+            <summary>Why does My Finances ask for Google Drive access?</summary>
+            <p>The App uses the narrow <code>drive.file</code> permission to create and manage its own workbook, backup packages, reports and originals you explicitly upload. It does not request unrestricted access to every Drive file. See <a href="privacy.html#google">Google data in the Privacy Policy</a>.</p>
+          </details>
+          <details>
+            <summary>Why can’t my Google account connect?</summary>
+            <p>Confirm the device is online and Google Play services are current. A public release also requires the developer’s production OAuth client to match package <code>ca.pfh.app</code> and the signing certificate used for the installed build. Managed work or school accounts may be restricted by their administrator.</p>
+          </details>
+          <details>
+            <summary>What does “Google Sheets changes need review” mean?</summary>
+            <p>The workbook differs from the last synchronized phone snapshot. Open the review and choose the phone or Sheets version for each change. My Finances does not silently use last-write-wins for conflicting financial records.</p>
+          </details>
+          <details>
+            <summary>Where are local and Drive backups stored?</summary>
+            <p>On modern Android versions, local packages are created under Downloads / My Finances / Backups / the current year. Connected Drive packages are stored under My Finances / Backups / year. A package contains sensitive financial information, so keep it private.</p>
+          </details>
+          <details>
+            <summary>Does scanning a receipt immediately create a transaction?</summary>
+            <p>No. On-device text recognition suggests merchant, date, total and category. You review the fields, select the paying account and approve before a transaction is recorded. An approved receipt and its linked transaction move to Trash and restore together.</p>
+          </details>
+          <details>
+            <summary>Does deleting a scanned receipt remove the original image?</summary>
+            <p>No. My Finances removes or restores its receipt metadata and linked transaction according to the action you choose, but it does not silently delete the original user-owned photo or PDF from Downloads, another document provider or Google Drive.</p>
+          </details>
+          <details>
+            <summary>Why does the Assistant ask me to download a model?</summary>
+            <p>Language-model weights are intentionally not included in the App package. You choose whether to download a compatible local model. Core finance features and deterministic tools remain available without one. A downloaded model is integrity-checked, stored privately and can be removed.</p>
+          </details>
+          <details>
+            <summary>Does the Assistant send my finances to the internet?</summary>
+            <p>A downloaded local model runs on the device. Cloud AI is off by default. If you explicitly configure and select an online provider, assistant prompts and limited relevant financial context are sent directly to that provider. Receipt images and statements are not automatically sent to cloud AI. See <a href="privacy.html#ai">Optional external AI providers</a>.</p>
+          </details>
+          <details>
+            <summary>Are AI answers and imported amounts guaranteed to be correct?</summary>
+            <p>No. AI, OCR and parsing can make mistakes. Financial totals are calculated by deterministic App rules, but you must review imports, proposed actions, estimates, reports and external rates before relying on them.</p>
+          </details>
+          <details>
+            <summary>How do I export my information?</summary>
+            <p>Use Data &amp; sync to create a portable local or Drive backup package. Reports can be exported as standalone HTML. Protect exports because they can contain detailed financial information.</p>
+          </details>
+          <details>
+            <summary>How do I delete my information?</summary>
+            <p>Use the App’s Trash and permanent-delete actions for supported local records. Disconnect Google or an AI provider to stop future access. Delete workbooks, backups, reports and uploaded originals separately from Google Drive, and revoke or delete provider data through that provider. Clearing App storage or uninstalling removes App-private local data but does not delete exported or cloud files.</p>
+          </details>
+          <details>
+            <summary>Can support remotely restore my local database?</summary>
+            <p>No. My Finances does not operate a central copy of your local database. Recovery depends on a valid portable backup or synchronized workbook. Verify backup integrity before replacing or clearing a device.</p>
+          </details>
+          <details>
+            <summary>Does My Finances provide investment or tax advice?</summary>
+            <p>No. It organizes information and provides estimates. It is not a financial adviser, broker, accountant, tax preparer or lawyer. Verify contribution room, market information and financial decisions with authoritative sources and qualified professionals.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container cta">
+        <p class="eyebrow">Still need help?</p>
+        <h2>Send a clear, privacy-safe description.</h2>
+        <p>We’ll use the details you provide only to understand and respond to the support request, subject to the Privacy Policy.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="mailto:myfinancesapp.support@gmail.com?subject=My%20Finances%20Support">Email support</a>
+          <a class="button button-secondary" href="privacy.html">Review privacy details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><img src="assets/my-finances-logo.png" alt="" width="42" height="42"><span>My Finances</span></a>
+          <p class="footer-copy">An offline-first Android tool for organizing personal financial information with optional, user-controlled cloud features.</p>
+        </div>
+        <div><p class="footer-heading">Product</p><div class="footer-links"><a href="index.html">Overview</a><a href="support.html">Support</a></div></div>
+        <div><p class="footer-heading">Legal</p><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 My Finances. All rights reserved.</span><span>No ads, third-party analytics or tracking cookies.</span></div>
+    </div>
+  </footer>
+</body>
+</html>
