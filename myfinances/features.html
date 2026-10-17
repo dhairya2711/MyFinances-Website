@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete My Finances feature guide: accounts, activity, planning, investments, imports, receipts, reports, Assistant, Google sync, backups, privacy and settings.">
+  <meta name="theme-color" content="#0a2444">
+  <title>Features &amp; App Guide — My Finances</title>
+  <link rel="canonical" href="https://myfinances-app.com/myfinances/features.html">
+  <link rel="icon" type="image/png" href="../assets/my-finances-logo.png?v=2">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="home.html" aria-label="My Finances home">
+        <img src="../assets/my-finances-logo.png?v=2" alt="" width="42" height="42">
+        <span>My Finances</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="home.html">Home</a>
+        <a href="features.html" aria-current="page">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero guide-hero">
+      <div class="container">
+        <p class="eyebrow">Complete product reference</p>
+        <h1>Features &amp; app guide</h1>
+        <p class="page-intro">A practical map of every available My Finances workspace: what it does, where to find it, what changes your records, and which optional services it uses.</p>
+        <div class="meta-row">
+          <span class="meta-tag">Offline-first Android app</span>
+          <span class="meta-tag">Package: ca.pfh.app</span>
+          <span class="meta-tag">Optional Google and AI connections</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-tight section-white" aria-labelledby="feature-list-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Feature list</p>
+          <h2 id="feature-list-heading">Everything currently available</h2>
+          <p class="section-copy">The bottom navigation provides Home, Accounts, Assistant, Activity and More. The remaining workspaces are one tap inside More.</p>
+        </div>
+        <div class="guide-index">
+          <a href="#home-dashboard"><span>01</span><strong>Home &amp; dashboard</strong><small>Net worth, cash flow and trend</small></a>
+          <a href="#accounts"><span>02</span><strong>Accounts &amp; categories</strong><small>Assets, liabilities and opening balances</small></a>
+          <a href="#activity"><span>03</span><strong>Activity &amp; ledger</strong><small>Income, expenses, transfers and payments</small></a>
+          <a href="#assistant"><span>04</span><strong>Assistant</strong><small>Questions, searches and reviewed actions</small></a>
+          <a href="#planning"><span>05</span><strong>Plans &amp; reminders</strong><small>Recurring items, budgets, goals and cards</small></a>
+          <a href="#investments"><span>06</span><strong>Investments &amp; FX</strong><small>Holdings, performance and registered accounts</small></a>
+          <a href="#documents"><span>07</span><strong>Imports &amp; receipts</strong><small>Statements, OCR and approval</small></a>
+          <a href="#reports"><span>08</span><strong>Reports</strong><small>HTML output, history and schedules</small></a>
+          <a href="#google"><span>09</span><strong>Google sync &amp; Drive</strong><small>Sheets, backups and optional originals</small></a>
+          <a href="#recovery"><span>10</span><strong>Backup, Trash &amp; recovery</strong><small>Portable packages and reversible deletion</small></a>
+          <a href="#settings"><span>11</span><strong>Settings &amp; security</strong><small>Theme, time zone, app lock and updates</small></a>
+          <a href="#boundaries"><span>12</span><strong>Privacy boundaries</strong><small>What stays local and what can leave</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guide-section" id="home-dashboard">
+      <div class="container guide-layout">
+        <aside class="guide-marker"><span>01</span><p>Bottom navigation</p><strong>Home</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">At-a-glance position</p>
+          <h2>Home &amp; dashboard</h2>
+          <p class="section-copy">Home summarizes recorded financial data without treating transfers or credit-card payments as new income or spending.</p>
+          <div class="behaviour-grid">
+            <article><h3>Net worth</h3><p>Adds active asset balances and subtracts liability balances. Enter amounts owed as positive values when creating credit cards, lines of credit, mortgages or loans; the ledger applies the liability sign.</p></article>
+            <article><h3>Cash flow</h3><p>Shows income, spending and their difference from actual transactions. Internal transfers and credit-card payments are excluded to prevent double counting.</p></article>
+            <article><h3>Six-month trend</h3><p>Compares stored monthly income and spending in CAD. Empty periods stay empty rather than inventing activity.</p></article>
+            <article><h3>Account preview</h3><p>Shows up to four active accounts with a shortcut to the complete Accounts workspace. Dashboard trend and account preview can be shown or hidden in Settings.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white guide-section" id="accounts">
+      <div class="container guide-layout">
+        <aside class="guide-marker"><span>02</span><p>Bottom navigation</p><strong>Accounts</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">Financial structure</p>
+          <h2>Accounts &amp; categories</h2>
+          <div class="access-note"><strong>Access:</strong> Tap <b>Accounts</b>. Use the add button for a new account; tap an existing card to edit or remove it.</div>
+          <ul class="detail-list">
+            <li><strong>Asset accounts:</strong> chequing, savings, cash, TFSA, FHSA, RRSP, investments and other assets.</li>
+            <li><strong>Liability accounts:</strong> credit cards, lines of credit, generic loans, mortgages, personal loans, auto loans, student loans and other liabilities.</li>
+            <li><strong>Opening balance anchor:</strong> each account has a currency, institution, opening amount and balance date. Transactions before that date are rejected so the starting balance is not silently rewritten.</li>
+            <li><strong>Multi-currency identity:</strong> accounts retain their three-letter currency code. Historical transactions retain reviewed native amounts and CAD equivalents when required.</li>
+            <li><strong>Categories:</strong> expense and income categories support names and editable emoji. Categories can be created from transaction flows or Assistant-supported actions.</li>
+            <li><strong>Edit and removal:</strong> accounts and categories remain editable. Removal sends supported records to Trash when dependencies allow it; referenced data is protected from unsafe permanent deletion.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guide-section" id="activity">
+      <div class="container guide-layout">
+        <aside class="guide-marker"><span>03</span><p>Bottom navigation</p><strong>Activity</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">Exact-cent ledger</p>
+          <h2>Activity &amp; transactions</h2>
+          <div class="access-note"><strong>Access:</strong> Tap <b>Activity</b>, or use the Transaction button from Home, Accounts or Activity. Tap a transaction to edit or remove it.</div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Record</th><th>Behaviour</th></tr></thead>
+              <tbody>
+                <tr><td>Expense</td><td>Reduces the source account and counts once as spending in its expense category.</td></tr>
+                <tr><td>Income</td><td>Increases the destination account and counts once as income in its income category.</td></tr>
+                <tr><td>Transfer</td><td>Debits one account and credits another. It does not become income or spending.</td></tr>
+                <tr><td>Credit-card payment</td><td>Moves money from a bank/cash account to the card and reduces the card debt. The original card purchase—not the payment—is the expense.</td></tr>
+                <tr><td>Imported or receipt activity</td><td>Keeps provenance linking it to the reviewed statement row or receipt document.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Amounts use integer cents. Cross-currency activity requires reviewed historical conversion information; old records are not recomputed using today’s rate. Activity contains a direct Trash entry with a count of recoverable records.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-navy guide-section" id="assistant">
+      <div class="container guide-layout">
+        <aside class="guide-marker guide-marker-dark"><span>04</span><p>Bottom navigation</p><strong>Assistant</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">One-tap finance workspace</p>
+          <h2>Assistant</h2>
+          <p class="section-copy">Assistant combines deterministic finance tools with an optional language model. Financial calculations and database validation stay authoritative regardless of the selected model.</p>
+          <div class="behaviour-grid dark-cards">
+            <article><h3>Questions and search</h3><p>Ask about spending, income, balances, budgets, goals, upcoming items or the highest expense in a period. Stored ledger tools calculate totals.</p></article>
+            <article><h3>Prepared actions</h3><p>It can prepare supported transactions, categories, accounts, budgets, goals, recurring items, edits and deletions. Missing details are asked inline.</p></article>
+            <article><h3>Approval and safety</h3><p>Financial changes show a review and require approval. Stable action IDs prevent duplicate writes, and validation rejects stale or unsafe requests.</p></article>
+            <article><h3>App tools</h3><p>Assistant can open supported workspaces, change theme/time zone, start an import, request a sync or create a local backup.</p></article>
+          </div>
+          <h3>Local models</h3>
+          <p>Model weights are not included in the APK. Open <b>Assistant → Models</b> to review model size, memory needs, publisher, origin and strengths, then download and select one. Files are SHA-256 verified, kept in app-private storage and removable. Local inference runs in a private secondary process so a native model failure does not close the finance UI.</p>
+          <h3>Optional online providers</h3>
+          <p>OpenAI, Anthropic, Gemini and trusted HTTPS OpenAI-compatible endpoints can be configured with your own API credential. Cloud AI is off by default, credentials are encrypted using Android Keystore, and there is no silent cloud fallback. See the <a href="privacy.html#ai">Privacy Policy</a> before enabling a provider.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guide-section" id="planning">
+      <div class="container guide-layout">
+        <aside class="guide-marker"><span>05</span><p>Bottom navigation</p><strong>More → Plan</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">Look ahead without rewriting history</p>
+          <h2>Plans, goals &amp; reminders</h2>
+          <ul class="detail-list">
+            <li><strong>Daily review:</strong> explicitly mark a day reviewed, including no-spend days. Merely having transactions does not mark it complete.</li>
+            <li><strong>Recurring activity:</strong> create daily, weekly, biweekly, monthly or annual income, expenses, transfers and card payments. Confirm mode waits for you; automatic mode posts only according to the stored rule and remains reviewable.</li>
+            <li><strong>Budgets:</strong> weekly or monthly category budgets support independent unused and overspend rollover plus threshold reminders.</li>
+            <li><strong>Goals:</strong> track savings, emergency, debt, net-worth, category-spending and investment-contribution goals with dates, optional links and progress entries.</li>
+            <li><strong>Card payment plans:</strong> compare recorded card payments with minimum, full-balance or chosen targets and a due date.</li>
+            <li><strong>Notifications:</strong> enable completion-aware reminders, lead time and snooze per supported plan item. Notification permission is requested only when a reminder is enabled, and lock-screen text avoids private amounts.</li>
+          </ul>
+          <p>Planned activity does not change recorded cash until a transaction is actually posted.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white guide-section" id="investments">
+      <div class="container guide-layout">
+        <aside class="guide-marker"><span>06</span><p>Bottom navigation</p><strong>More → Investments</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">Separate cash flow from market movement</p>
+          <h2>Investments, registered accounts &amp; FX</h2>
+          <div class="behaviour-grid">
+            <article><h3>Simple tracking</h3><p>Store dated account value snapshots and cash, then separate net contributions from investment return where the available currency data supports it.</p></article>
+            <article><h3>Detailed tracking</h3><p>Create holdings, buy/sell trades, fees, security prices and valuations. Cards show market value, book cost and realized/unrealized results from stored records.</p></article>
+            <article><h3>Investment activity</h3><p>Record qualifying contributions, withdrawals, dividends and distributions without confusing them with market growth.</p></article>
+            <article><h3>TFSA, FHSA and RRSP</h3><p>Estimate remaining contribution room from a user-supplied authoritative opening amount plus qualifying CAD activity. It is not a CRA record.</p></article>
+          </div>
+          <p>Foreign-exchange rates can be entered manually or requested from the keyless Bank of Canada Valet API. The published business date, source and exact stored rate remain attached to history; unavailable rates are never guessed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guide-section" id="documents">
+      <div class="container guide-layout">
+        <aside class="guide-marker"><span>07</span><p>Bottom navigation</p><strong>More → Imports &amp; receipts</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">Preview before posting</p>
+          <h2>Statement imports &amp; receipt scanning</h2>
+          <div class="access-note"><strong>Access:</strong> Open <b>More → Imports &amp; receipts</b>. Choose Statement or Receipt, then select a file using Android’s document picker.</div>
+          <ul class="detail-list">
+            <li><strong>Statements:</strong> import CSV, XLSX, text-based PDF and supported scanned PDF content. Common date, description, amount, debit and credit layouts are parsed locally.</li>
+            <li><strong>Row review:</strong> select the account, inspect detected dates/descriptions/amounts, change category suggestions and exclude unwanted rows before approval.</li>
+            <li><strong>Receipts:</strong> image and PDF receipts use on-device recognition plus local parsing to suggest merchant, date, total and category. The paying account is selected during review.</li>
+            <li><strong>No silent posting:</strong> a document draft does not affect balances. Only approved rows or an approved receipt create transactions.</li>
+            <li><strong>Duplicate protection:</strong> stable file and economic-row fingerprints prevent the same source from being imported twice.</li>
+            <li><strong>Linked lifecycle:</strong> an approved receipt and its transaction move to Trash and restore together; permanent deletion removes the linked metadata while leaving the user-owned original file untouched.</li>
+            <li><strong>Original storage:</strong> selected files remain where you chose them. A Drive original is uploaded only when you explicitly use a Drive action.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white guide-section" id="reports">
+      <div class="container guide-layout">
+        <aside class="guide-marker"><span>08</span><p>Bottom navigation</p><strong>More → Reports</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">Portable financial summaries</p>
+          <h2>Reports, history &amp; schedules</h2>
+          <ul class="detail-list">
+            <li><strong>Templates:</strong> create Overview, Spending Analysis and Investment Performance reports.</li>
+            <li><strong>Coverage:</strong> choose dates, accounts and supported sections. Reports use the same exact ledger and stored historical conversions as the app.</li>
+            <li><strong>Output:</strong> preview responsive HTML and export a self-contained standalone HTML file that can be opened offline.</li>
+            <li><strong>History:</strong> previous generated reports remain available and can be moved to Trash, restored or permanently removed.</li>
+            <li><strong>Alerts:</strong> save daily, weekly or monthly report recipes with time zone, coverage rules and a device notification when the report is ready.</li>
+            <li><strong>Optional email:</strong> phone-independent email delivery requires the documented one-time Apps Script installation and authorization in your Google workbook. Offline phone changes not yet synchronized may be absent from that email.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-navy guide-section" id="google">
+      <div class="container guide-layout">
+        <aside class="guide-marker guide-marker-dark"><span>09</span><p>Bottom navigation</p><strong>More → Settings → Data &amp; sync</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">Optional connection</p>
+          <h2>Google Sheets, Drive &amp; account connection</h2>
+          <div class="behaviour-grid dark-cards">
+            <article><h3>Connect Google</h3><p>Select an account and grant basic identity plus <code>drive.file</code>. The app does not request unrestricted access to every Drive file.</p></article>
+            <article><h3>Sheets synchronization</h3><p>Creates or reuses a structured My Finances workbook. New app changes queue automatic sync; Sync now remains available.</p></article>
+            <article><h3>Conflict review</h3><p>Stable IDs, checksums and a three-way comparison distinguish phone, workbook and common-base data. Conflicts require an explicit phone-or-Sheets choice.</p></article>
+            <article><h3>Drive content</h3><p>Creates organized app folders for backup packages, generated reports and document originals that you explicitly upload.</p></article>
+          </div>
+          <p>Disconnecting revokes the app connection and removes local connection metadata. It does not silently delete existing workbooks, backups, reports or originals in your Google Drive.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guide-section" id="recovery">
+      <div class="container guide-layout">
+        <aside class="guide-marker"><span>10</span><p>Activity or Settings</p><strong>Trash &amp; backup</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">Recoverable by design</p>
+          <h2>Backups, restore, Trash &amp; deletion</h2>
+          <div class="behaviour-grid">
+            <article><h3>Portable packages</h3><p>Create a ZIP backup with stable IDs, financial records, recovery history, manifest and integrity checksum. Provider credentials and downloaded model weights are excluded.</p></article>
+            <article><h3>Local backups</h3><p>Choose a local storage location when Android requires it. Organized My Finances / Backups / year folders are used for later packages.</p></article>
+            <article><h3>Drive backups</h3><p>Connected users can create manual packages and limited automatic recovery copies. The app retains only its configured automatic-backup history.</p></article>
+            <article><h3>Restore review</h3><p>Inspect a package before choosing merge or replace. Referential, currency, ledger and integrity validation runs before records are accepted.</p></article>
+          </div>
+          <p><b>Trash access:</b> tap Activity → Trash. Supported accounts, categories, transactions, plans, investment records, receipt drafts and reports can be restored. Permanent deletion requires confirmation and respects linked-record safety.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white guide-section" id="settings">
+      <div class="container guide-layout">
+        <aside class="guide-marker"><span>11</span><p>Bottom navigation</p><strong>More → Settings</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">Personal control</p>
+          <h2>Settings, appearance &amp; security</h2>
+          <ul class="detail-list">
+            <li><strong>Appearance:</strong> one compact light/dark switch; the selected app theme is stored locally.</li>
+            <li><strong>Dashboard:</strong> show or hide the cash-flow trend and account preview.</li>
+            <li><strong>Time zone:</strong> choose a zone manually, use the device zone, or explicitly allow a location lookup to identify a likely zone locally. Financial dates and schedules use the chosen IANA zone.</li>
+            <li><strong>App lock:</strong> enable biometric or device-credential protection, choose an automatic lock timeout and lock immediately.</li>
+            <li><strong>Screen privacy:</strong> sensitive app screens are protected from recent-app screenshots and ordinary screen capture by Android’s secure-window flag.</li>
+            <li><strong>Data &amp; sync status:</strong> connection, backup and sync errors appear here and as an attention badge on More instead of routine success pop-ups.</li>
+            <li><strong>Release identity:</strong> view app version and signing identity, and use verified update checks after the owner publishes a signed update channel.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guide-section" id="boundaries">
+      <div class="container guide-layout">
+        <aside class="guide-marker"><span>12</span><p>Applies everywhere</p><strong>Privacy boundaries</strong></aside>
+        <div class="guide-content">
+          <p class="eyebrow">Know what leaves the phone</p>
+          <h2>Local by default, explicit when connected</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Feature</th><th>Default boundary</th><th>When data leaves</th></tr></thead>
+              <tbody>
+                <tr><td>Core finance, plans and reports</td><td>Stored and calculated on the device.</td><td>Only through an export, Google sync/backup, or another action you choose.</td></tr>
+                <tr><td>Receipt and statement extraction</td><td>On-device OCR/parsing and review.</td><td>An original goes to Drive only through its explicit upload action.</td></tr>
+                <tr><td>Local AI</td><td>Inference and model files stay in app-private device storage.</td><td>The model download itself contacts its named host; financial records are not part of that download.</td></tr>
+                <tr><td>Cloud AI</td><td>Disabled.</td><td>After you configure and select a provider, prompts and limited relevant context go directly to it.</td></tr>
+                <tr><td>Google</td><td>Disconnected.</td><td>After connection, selected My Finances records and requested artifacts use your Google account.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="notice"><strong>Product boundary:</strong> My Finances does not connect directly to banks, move money or provide professional financial, investment, tax, accounting or legal advice. Imports, AI suggestions, external rates and registered-room estimates require review.</div>
+          <div class="button-row guide-actions">
+            <a class="button button-primary" href="privacy.html">Read the full Privacy Policy</a>
+            <a class="button button-secondary" href="faq.html">Open FAQ &amp; support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="home.html"><img src="../assets/my-finances-logo.png?v=2" alt="" width="42" height="42"><span>My Finances</span></a>
+          <p class="footer-copy">An offline-first Android tool for organizing personal financial information with optional, user-controlled cloud features.</p>
+        </div>
+        <div><p class="footer-heading">Product</p><div class="footer-links"><a href="home.html">Home</a><a href="features.html">Features &amp; guide</a><a href="faq.html">FAQ &amp; support</a></div></div>
+        <div><p class="footer-heading">Legal</p><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 My Finances. All rights reserved.</span><span>No ads, third-party analytics or tracking cookies.</span></div>
+    </div>
+  </footer>
+</body>
+</html>
